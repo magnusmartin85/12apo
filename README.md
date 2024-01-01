@@ -7,78 +7,136 @@
 - Simple
 - Mobile first
 - Multi level
-- Lightweight: ~9KB (generated js file)
+- Lightweight
+- No dependencies
 
 ## Getting started
 
-1. Download the zip file of the latest release from GitHub. You will find a js and a css file inside.
-2. Include the css file at the top of your page in the head section:
-   `<link href="path/to/off-canvas-menu.css" rel="stylesheet" />`
+1. Download the zip file of the latest release from GitHub. You will find HTML, JS and CSS file inside.
+2. Include the CSS file at the top of your page in the head section:
+   `<link href="path/to/12apo-core.css" rel="stylesheet" />`
 3. Place the script tag at the bottom of your page right before the closing body tag:
-   `<script src="path/to/off-canvas-menu.js"></script>`
+   `<script src="path/to/12apo-core.js"></script>`
 4. Create a navigation list for your off-canvas menu:
    ```
-   <div class="off-canvas">
-      <div class="off-canvas-menuHeader">
-        <h4 class="off-canvas-title">Menu</h4>
-        <div aria-label="Close">
-          <div class="icon-close"></div>
-        </div>
-      </div>
-   
+     <div class="off-canvas">
       <div class="off-canvas-body">
         <nav class="off-canvas-nav">
-          <div class="list-level-0">
-            <div>
-              <a href="#"> Home </a>
-            </div>
-            <div>
-              <a href="#">
-                Services <span class="link-arrow">›</span>
-              </a>
-            </div>
-            <div>
-              <div>
-                <a href="#">
-                  UX-Design <span class="link-arrow">›</span>
-                </a>
-              </div>
-              <div>
-                <div>
-                  <a href="#"> Screendesign </a>
-                </div>
-                <div class="list-level-3"></div>
-              </div>
-              <div>
-                <a href="#"> Webdesign </a>
-              </div>
-              <div>
-                <a href="#"> Content Marketing </a>
-              </div>
-            </div>
-            <div>
-              <a href="#">
-                Team <span class="link-arrow">›</span>
-              </a>
-            </div>
-            <div>
-              <div>
-                <a href="#"> John </a>
-              </div>
-              <div>
-                <a href="#"> Peter </a>
-              </div>
-              <div>
-                <a href="#"> Michael </a>
-              </div>
-            </div>
-            <div>
-              <a href="#"> Contact </a>
-            </div>
-          </div>
+          <ul>
+            <li>
+              <a href="#">Guit / Bass</a>
+              <ul>
+                <li>
+                  <a href="#">Electric Guitars</a>
+                </li>
+                <li>
+                  <a href="#">Classical Guitars</a>
+                </li>
+                <li>
+                  <a href="#">Acoustic Guitars</a>
+                </li>
+                <li>
+                  <a href="#">Eletric Basses</a>
+                </li>
+                <li>
+                  <a href="#">Bluegrass Instruments</a>
+                  <ul>
+                    <li>
+                      <a href="#">Banjos</a>
+                    </li>
+                    <li>
+                      <a href="#">Mandolins</a>
+                    </li>
+                    <li>
+                      <a href="#">Lap Steel Guitars</a>
+                    </li>
+                    <li>
+                      <a href="#">Resonator Guitars</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Electric Guitar Amps</a>
+                  <ul>
+                    <li>
+                      <a href="#">Electric Guitar Combos</a>
+
+                      <ul>
+                        <li>
+                          <a href="">Solid-State Guitar Combos</a>
+                        </li>
+                        <li>
+                          <a href="">Tube Guitar Combos</a>
+                        </li>
+                        <li>
+                          <a href="">Modeling Guitar Combos</a>
+                        </li>
+                        <li>
+                          <a href="">Hybrid Guitar Combos</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Electric Guitar Amp Heads</a>
+                      <ul>
+                        <li>
+                          <a href="">Solid-State Guitar Heads</a>
+                        </li>
+                        <li>
+                          <a href="">Tube Guitar Heads</a>
+                        </li>
+                        <li>
+                          <a href="">Modeling Guitar Heads</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Drums</a>
+              <ul>
+                <li>
+                  <a href="#">Acoustic Drums</a>
+                  <ul>
+                    <li>
+                      <a href="#">Acoustic Drumkits</a>
+                    </li>
+                    <li>
+                      <a href="#">Drum Shell Sets</a>
+                    </li>
+                    <li>
+                      <a href="#">Premium Drum Kits</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Electronic Drums</a>
+                  <ul>
+                    <li>
+                      <a href="#">Electronic Drumkits</a>
+                    </li>
+                    <li>
+                      <a href="#">Electronic Drum Sound Modules</a>
+                    </li>
+                    <li>
+                      <a href="#">Percussion and Sampling Pads</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Cymbals</a>
+                </li>
+                <li>
+                  <a href="#">Sticks and Mallets</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
-   </div>
+    </div>
    ```
 
 5. Create a menu toggle:
@@ -106,7 +164,7 @@ To serve on localhost run `npm run start` on the command line.
 ### Build
 
 For a production build run `npm run build` on the command line.
-This will generate a `public` directory with `index.html`, `off-canvas-menu.js` and `off-canvas-menu.css`.
+This will generate a `public` directory with `index.html`, `12apo-core.js` and `12apo-core.css`.
 
 ## Demo
 

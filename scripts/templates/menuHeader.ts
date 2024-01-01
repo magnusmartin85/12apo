@@ -3,7 +3,7 @@ export const menuHeader: string = `
   <button type="button" aria-label="Back">
     <div class="icon-back"></div>
   </button>
-  
+   
   <h4 class="off-canvas-title"></h4>
   
   <button type="button" aria-label="Close">

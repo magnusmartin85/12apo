@@ -11,12 +11,12 @@ const config: webpack.Configuration = merge(webpackCommon, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
-    watchFiles: [paths.scripts, `${paths.root}/index.html`],
+    watchFiles: [paths.styles, paths.scripts, `${paths.root}/index.html`],
     static: {
       directory: paths.public
     },
     compress: true,
-    port: 9200
+    port: 9100
   }
 });
 

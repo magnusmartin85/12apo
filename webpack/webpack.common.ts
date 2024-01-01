@@ -24,7 +24,7 @@ const config: webpack.Configuration = {
         exclude: /node_modules/,
         type: "asset/resource",
         generator: {
-          filename: "core.css"
+          filename: "12apo-core.css"
         },
         use: ["sass-loader"]
       },
@@ -36,7 +36,7 @@ const config: webpack.Configuration = {
     ]
   },
   output: {
-    filename: "core.js",
+    filename: "12apo-core.js",
     path: paths.public,
     clean: true
   }
