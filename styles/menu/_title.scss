@@ -1,0 +1,8 @@
+@use "sass:map";
+
+.off-canvas-title {
+  color: map.get($menu-colors, "header-text-color");
+  letter-spacing: 0.05rem;
+  margin: 0;
+  padding-left: 32px;
+}

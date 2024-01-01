@@ -1,0 +1,37 @@
+.icon-back {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  opacity: 0.7;
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 32px;
+
+  &::before,
+  &::after {
+    background-color: $alto;
+    border-radius: 4px;
+    content: " ";
+    height: 10px;
+    position: absolute;
+    width: 3px;
+  }
+
+  &::before {
+    left: 15px;
+    top: 7px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    left: 15px;
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}

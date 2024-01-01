@@ -1,0 +1,23 @@
+@use "sass:map";
+
+@mixin links($link, $visited, $hover, $active) {
+  color: $link;
+  padding: 10px;
+  text-decoration: none;
+
+  &:visited {
+    color: $visited;
+  }
+
+  &:hover {
+    color: $hover;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    color: $hover;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,62 @@
+@use "sass:map";
+
+.off-canvas-nav {
+  $level-width: 50%;
+
+  %level-style {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+
+    @media (width > 400px) {
+      width: 400px;
+    }
+
+    &.show {
+      transform: none;
+      visibility: visible;
+    }
+  }
+
+  ul {
+    @extend %level-style;
+
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 1px solid map.get($menu-colors, "list-item-border");
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 48px;
+
+    a:nth-child(1) {
+      justify-content: flex-start;
+      width: 90%;
+    }
+
+    a:nth-child(2) {
+      border-left: 1px solid map.get($menu-colors, "list-item-border");
+      justify-content: center;
+      width: 10%;
+
+      &::after {
+        border-right-width: 2px;
+        border-right-style: solid;
+        border-top-style: solid;
+        border-top-width: 2px;
+        content: "";
+        display: block;
+        height: 6px;
+        transform: rotate(45deg);
+        width: 6px;
+        z-index: 0;
+      }
+    }
+  }
+}

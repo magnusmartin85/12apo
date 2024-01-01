@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "sass:map";
+@import "../config/extends";
+
+.off-canvas-nav {
+  a {
+    @include links(
+      map.get($menu-colors, "active-menu-item"),
+      map.get($menu-colors, "active-menu-item"),
+      map.get($menu-colors, "active-menu-item"),
+      map.get($menu-colors, "active-menu-item")
+    );
+
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 30px;
+    justify-content: space-between;
+  }
+}
