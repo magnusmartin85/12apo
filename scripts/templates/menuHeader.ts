@@ -1,13 +1,13 @@
 export const menuHeader: string = `
 <div class="off-canvas-header">
-  <button type="button" aria-label="Back">
+  <button  aria-label="Back" type="button">
     <div class="icon-back"></div>
   </button>
    
-  <h4 class="off-canvas-title"></h4>
+  <h4 class="off-canvas-title"></h4> 
   
-  <button type="button" aria-label="Close">
+  <button aria-label="Close" type="button"> 
     <div class="icon-close"></div> 
   </button>
 </div>
-`;
+`.trim();

@@ -168,7 +168,7 @@ This will generate a `public` directory with `index.html`, `12apo-core.js` and `
 
 ## Demo
 
-[Demo](http://off-canvas-menu.mgnmrt.com)
+[Demo](https://12apo.com)
 
 ## Built with
 

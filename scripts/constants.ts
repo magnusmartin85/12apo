@@ -1,17 +1,23 @@
-import { CssClassesProps } from "./types";
-
-export const CSS_CLASSES: CssClassesProps = {
-  ARROW: "link-arrow",
-  ARROW_LEFT: "arrow-left",
-  BACKDROP: "off-canvas-backdrop",
-  ICON_BACK: "icon-back",
-  ICON_CLOSE: "icon-close",
-  ICON_OPEN: "icon-open-container",
-  MENU_TITLE: "off-canvas-title",
-  MENU_CONTAINER: "off-canvas",
-  MENU_HEADER: "off-canvas-header",
-  MENU_NAV: "off-canvas-nav",
-  SIDEBAR: "off-canvas"
+export const CSS_CLASSES = {
+  ICONS: {
+    BACK: "icon-back",
+    CLOSE: "icon-close",
+    OPEN: "icon-open-container"
+  },
+  MENU: {
+    BACKDROP: "off-canvas-backdrop",
+    TITLE: "off-canvas-title",
+    CONTAINER: "off-canvas",
+    HEADER: "off-canvas-header",
+    NAV: "off-canvas-nav",
+    SIDEBAR: "off-canvas"
+  },
+  VISIBILITY: {
+    VISIBLE: "visible",
+    HIDDEN: "hidden",
+    SHOW: "show"
+  },
+  CHILDREN_ITEM_COUNTER: "children-item-counter"
 };
 
 export const STRINGS = {

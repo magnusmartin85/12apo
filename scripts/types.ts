@@ -1,7 +1,3 @@
-export type CssClassesProps = {
-  [key: string]: string | { [key: number]: string };
-};
-
 export type MenuItemChildProps = {
   children?: MenuItemChildrenProps;
   href: string;
